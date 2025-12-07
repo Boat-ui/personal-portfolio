@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enock Boateng - Professional CV</title>
+    <style>
+        /* Print-friendly styles */
+        @media print {
+            @page {
+                margin: 0.5in;
+            }
+            
+            body {
+                font-size: 12pt;
+                line-height: 1.4;
+            }
+            
+            .no-print {
+                display: none !important;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            a {
+                color: #000 !important;
+                text-decoration: none !important;
+            }
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #0073bb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 28pt;
+            color: #0073bb;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .header .title {
+            font-size: 14pt;
+            color: #666;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+            font-size: 11pt;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: #0073bb;
+            font-size: 16pt;
+            font-weight: bold;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 15px;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category h3 {
+            font-size: 13pt;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background: #f0f8ff;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 10pt;
+            border: 1px solid #d0e8ff;
+        }
+        
+        .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project-item:last-child {
+            border-bottom: none;
+        }
+        
+        .project-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .project-subtitle {
+            font-size: 11pt;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0;
+        }
+        
+        .tech-tag {
+            background: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-size: 9pt;
+        }
+        
+        .project-results {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 10pt;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        /* Print button (hidden when printing) */
+        .print-actions {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .print-btn {
+            display: inline-block;
+            background: #0073bb;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 14pt;
+        }
+        
+        .print-btn:hover {
+            background: #005d93;
+        }
+        
+        .back-btn {
+            background: #6c757d;
+        }
+        
+        .back-btn:hover {
+            background: #545b62;
+        }
+    </style>
+</head>
+<body>
+    <!-- Print Actions (Hidden when printing) -->
+    <div class="print-actions no-print">
+        <h2>📄 Enock Boateng - Professional CV</h2>
+        <p>Click "Print CV" to save as PDF, or "Back to Portfolio" to return</p>
+        <div style="margin-top: 20px;">
+            <button onclick="window.print()" class="print-btn">
+                🖨️ Print CV (Save as PDF)
+            </button>
+            <a href="index.html" class="print-btn back-btn">
+                ← Back to Portfolio
+            </a>
+        </div>
+        <p style="margin-top: 15px; color: #666; font-size: 12pt;">
+            <strong>Tip:</strong> In the print dialog, choose "Save as PDF" instead of a physical printer
+        </p>
+    </div>
+    
+    <!-- CV Content -->
+    <div class="header">
+        <h1>ENOCK BOATENG</h1>
+        <div class="title">Full Stack Cloud Developer | AWS Specialist</div>
+        <div class="contact-info">
+            <div class="contact-item">
+                📧 <strong>Email:</strong> benock672@gmail.com
+            </div>
+            <div class="contact-item">
+                📱 <strong>Phone:</strong> +233 539 864 748
+            </div>
+            <div class="contact-item">
+                💼 <strong>LinkedIn:</strong> linkedin.com/in/enock-boateng-886882283
+            </div>
+            <div class="contact-item">
+                🐙 <strong>GitHub:</strong> github.com/Boat-ui
+            </div>
+            <div class="contact-item">
+                🌐 <strong>Portfolio:</strong> [Your AWS Portfolio URL]
+            </div>
+        </div>
+    </div>
+    
+    <!-- Professional Summary -->
+    <div class="section">
+        <div class="section-title">PROFESSIONAL SUMMARY</div>
+        <p>
+            Full Stack Cloud Developer specializing in AWS infrastructure with expertise in building 
+            and deploying scalable web applications. Proven ability to handle complete development 
+            pipeline from frontend development to cloud deployment and infrastructure management. 
+            Strong focus on cost optimization, security, and building efficient serverless solutions. 
+            Built production-ready systems from scratch demonstrating practical AWS implementation skills.
+        </p>
+    </div>
+    
+    <!-- Technical Skills -->
+    <div class="section">
+        <div class="section-title">TECHNICAL SKILLS</div>
+        <div class="two-column">
+            <div>
+                <h3 style="color: #444; margin-bottom: 10px;">Cloud (AWS)</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Amazon S3</span>
+                    <span class="skill-tag">AWS Lambda</span>
+                    <span class="skill-tag">API Gateway</span>
+                    <span class="skill-tag">DynamoDB</span>
+                    <span class="skill-tag">CloudFront</span>
+                    <span class="skill-tag">EC2</span>
+                    <span class="skill-tag">VPC</span>
+                    <span class="skill-tag">IAM</span>
+                    <span class="skill-tag">CloudWatch</span>
+                    <span class="skill-tag">Route 53</span>
+                    <span class="skill-tag">SES</span>
+                    <span class="skill-tag">Cost Explorer</span>
+                </div>
+                
+                <h3 style="color: #444; margin-top: 20px; margin-bottom: 10px;">Development</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">REST APIs</span>
+                </div>
+            </div>
+            
+            <div>
+                <h3 style="color: #444; margin-bottom: 10px;">Tools & DevOps</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">AWS CLI</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Cost Optimization</span>
+                    <span class="skill-tag">Security Best Practices</span>
+                    <span class="skill-tag">Infrastructure as Code</span>
+                    <span class="skill-tag">CI/CD Concepts</span>
+                </div>
+                
+                <h3 style="color: #444; margin-top: 20px; margin-bottom: 10px;">Areas of Expertise</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Serverless Architecture</span>
+                    <span class="skill-tag">Cloud Security</span>
+                    <span class="skill-tag">Cost Management</span>
+                    <span class="skill-tag">Performance Optimization</span>
+                    <span class="skill-tag">Auto-scaling Solutions</span>
+                    <span class="skill-tag">AWS Deployment</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projects -->
+    <div class="section">
+        <div class="section-title">FEATURED PROJECTS</div>
+        
+        <div class="project-item">
+            <div class="project-title">Serverless Website with Newsletter System</div>
+            <div class="project-subtitle">Production-ready email subscription management system</div>
+            <div class="project-tech">
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">API Gateway</span>
+                <span class="tech-tag">DynamoDB</span>
+                <span class="tech-tag">CloudFront</span>
+                <span class="tech-tag">IAM Security</span>
+            </div>
+            <ul>
+                <li>Built 100% serverless website handling complete email subscription workflow</li>
+                <li>Implemented admin dashboard with token-based authentication (TravelAdmin123)</li>
+                <li>Designed for auto-scaling from 10 to 10,000+ users with zero server management</li>
+                <li>Achieved operational cost of &lt;$5/month at scale with optimized architecture</li>
+                <li>Live deployment: https://d3o8vrxnvf3ttp.cloudfront.net</li>
+            </ul>
+            <div class="project-results">
+                <strong>Key Results:</strong> 99.9% uptime, cost-efficient architecture, secure implementation, 
+                production-ready system built from scratch
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Professional Portfolio Website</div>
+            <div class="project-subtitle">Responsive portfolio deployed on AWS infrastructure</div>
+            <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">CloudFront</span>
+                <span class="tech-tag">Route 53</span>
+            </div>
+            <ul>
+                <li>Designed and deployed responsive portfolio website with modern UI/UX</li>
+                <li>Implemented AWS S3 for static hosting with CloudFront CDN for global delivery</li>
+                <li>Configured HTTPS security, caching policies, and cost optimization</li>
+                <li>Integrated contact form with JavaScript validation and interactive elements</li>
+            </ul>
+            <div class="project-results">
+                <strong>Key Results:</strong> 99.9% uptime, fast global loading, mobile responsive, 
+                professional presentation of skills and projects
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">AWS Cost Optimization Automation</div>
+            <div class="project-subtitle">Python scripts for cloud cost management and monitoring</div>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Boto3</span>
+                <span class="tech-tag">CloudWatch</span>
+                <span class="tech-tag">Cost Explorer API</span>
+                <span class="tech-tag">AWS SNS</span>
+            </div>
+            <ul>
+                <li>Developed Python scripts to automate identification of unused AWS resources</li>
+                <li>Created monitoring system for cost anomalies and budget alerts</li>
+                <li>Implemented automated reports with actionable cost-saving recommendations</li>
+                <li>Integrated with Slack/email for real-time notifications</li>
+            </ul>
+            <div class="project-results">
+                <strong>Key Results:</strong> Identified 35% potential cost savings, automated monthly 
+                reporting, proactive cost management
+            </div>
+        </div>
+    </div>
+    
+    <!-- Certifications & Education -->
+    <div class="section">
+        <div class="section-title">CERTIFICATIONS & CONTINUOUS LEARNING</div>
+        <div class="two-column">
+            <div>
+                <h3 style="color: #444; margin-bottom: 10px;">AWS Training</h3>
+                <ul>
+                    <li>AWS Skill Builder: Cloud Foundations</li>
+                    <li>AWS Skill Builder: VPC Networking</li>
+                    <li>AWS Skill Builder: Security Basics</li>
+                    <li>AWS Skill Builder: Serverless Architecture</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #444; margin-bottom: 10px;">In Progress</h3>
+                <ul>
+                    <li>AWS Certified Cloud Practitioner</li>
+                    <li>AWS Certified Solutions Architect - Associate</li>
+                    <li>Advanced Python for Cloud Automation</li>
+                </ul>
+            </div>
+        </div>
+        <p style="margin-top: 15px; font-style: italic;">
+            <strong>Learning Approach:</strong> Hands-on project-based learning with emphasis on 
+            practical implementation and real-world problem solving
+        </p>
+    </div>
+    
+    <!-- Availability & Value Proposition -->
+    <div class="section">
+        <div class="section-title">VALUE PROPOSITION & AVAILABILITY</div>
+        <div class="two-column">
+            <div>
+                <h3 style="color: #444; margin-bottom: 10px;">Unique Value</h3>
+                <ul>
+                    <li><strong>Complete Pipeline:</strong> Development + Deployment expertise</li>
+                    <li><strong>Cost-Conscious:</strong> Built-in optimization from day one</li>
+                    <li><strong>Security-Focused:</strong> Best practices implemented by default</li>
+                    <li><strong>Business-Minded:</strong> Technical decisions aligned with business goals</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #444; margin-bottom: 10px;">Available For</h3>
+                <ul>
+                    <li>Full-time Cloud Developer roles</li>
+                    <li>AWS Infrastructure positions</li>
+                    <li>DevOps Engineer opportunities</li>
+                    <li>Freelance AWS projects</li>
+                    <li>Cloud consulting engagements</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p><strong>Reference:</strong> Portfolio with live projects available at: [Your AWS Portfolio URL]</p>
+        <p>Last Updated: December 2025 | This CV is hosted on AWS infrastructure</p>
+        <p class="no-print"><em>Tip: Print this page (Ctrl+P) and select "Save as PDF" for a downloadable version</em></p>
+    </div>
+    
+    <script>
+        // Auto-update the portfolio URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const portfolioUrl = window.location.origin.replace('/cv-pdf.html', '');
+            const portfolioLinks = document.querySelectorAll('[href="[Your AWS Portfolio URL]"]');
+            portfolioLinks.forEach(link => {
+                link.href = portfolioUrl;
+                link.textContent = portfolioUrl;
+            });
+        });
+    </script>
+</body>
+</html>
