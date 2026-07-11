@@ -2,7 +2,7 @@
 
 Personal portfolio and CV, built as a static site and hosted on GitHub Pages.
 
-**Live site:** https://boat-ui.github.io
+**Live site:**  <https://boat-ui.github.io/personal-portfolio>
 
 ## About
 
@@ -44,7 +44,7 @@ building toward a blue team / SOC analyst path.
 
 ## Contact
 
-- Email: benock672@gmail.com
+- Email: <benock672@gmail.com>
 - LinkedIn: [linkedin.com/in/enock-boateng](https://www.linkedin.com/in/enock-boateng-886882283)
 - GitHub: [github.com/Boat-ui](https://github.com/Boat-ui)
 
