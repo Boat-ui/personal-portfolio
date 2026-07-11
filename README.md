@@ -2,7 +2,7 @@
 
 Personal portfolio and CV, built as a static site and hosted on GitHub Pages.
 
-**Live site:** https://boat-ui.github.io
+**Live site:** https://boat-ui.github.io/personal-portfolio
 
 ## About
 
