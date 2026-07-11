@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enock Boateng - Professional CV</title>
+    <title>Enock Boateng - Flutter & Web Developer CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         /* Print-friendly styles */
         @media print {
@@ -31,7 +33,7 @@
         }
         
         body {
-            font-family: 'Calibri', 'Arial', sans-serif;
+            font-family: 'Inter', 'Calibri', 'Arial', sans-serif;
             max-width: 8.5in;
             margin: 0 auto;
             padding: 20px;
@@ -41,16 +43,18 @@
         
         .header {
             text-align: center;
-            border-bottom: 3px solid #0073bb;
+            border-bottom: 3px solid #a6690f;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
         
         .header h1 {
+            font-family: 'Space Grotesk', 'Calibri', sans-serif;
             font-size: 28pt;
-            color: #0073bb;
+            color: #1a1d2a;
             margin: 0;
-            font-weight: bold;
+            font-weight: 700;
+            letter-spacing: -0.01em;
         }
         
         .header .title {
@@ -80,11 +84,12 @@
         }
         
         .section-title {
-            color: #0073bb;
+            font-family: 'Space Grotesk', 'Calibri', sans-serif;
+            color: #1a1d2a;
             font-size: 16pt;
-            font-weight: bold;
+            font-weight: 700;
             padding-bottom: 8px;
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #a6690f;
             margin-bottom: 15px;
         }
         
@@ -103,7 +108,7 @@
         .skill-category h3 {
             font-size: 13pt;
             margin-bottom: 10px;
-            color: #444;
+            color: #1a1d2a;
         }
         
         .skill-tags {
@@ -186,7 +191,7 @@
         
         .print-btn {
             display: inline-block;
-            background: #0073bb;
+            background: #a6690f;
             color: white;
             padding: 12px 30px;
             border-radius: 5px;
@@ -232,7 +237,7 @@
     <!-- CV Content -->
     <div class="header">
         <h1>ENOCK BOATENG</h1>
-        <div class="title">Full Stack Cloud Developer | AWS Specialist</div>
+        <div class="title">Flutter & Web Developer | Final-Year IT Student, UENR</div>
         <div class="contact-info">
             <div class="contact-item">
                 📧 <strong>Email:</strong> benock672@gmail.com
@@ -247,7 +252,7 @@
                 🐙 <strong>GitHub:</strong> github.com/Boat-ui
             </div>
             <div class="contact-item">
-                🌐 <strong>Portfolio:</strong> [Your AWS Portfolio URL]
+                🌐 <strong>Portfolio:</strong> <a href="https://boat-ui.github.io">https://boat-ui.github.io</a>
             </div>
         </div>
     </div>
@@ -256,12 +261,23 @@
     <div class="section">
         <div class="section-title">PROFESSIONAL SUMMARY</div>
         <p>
-            Full Stack Cloud Developer specializing in AWS infrastructure with expertise in building 
-            and deploying scalable web applications. Proven ability to handle complete development 
-            pipeline from frontend development to cloud deployment and infrastructure management. 
-            Strong focus on cost optimization, security, and building efficient serverless solutions. 
-            Built production-ready systems from scratch demonstrating practical AWS implementation skills.
+            Final-year Information Technology student at the University of Energy and Natural
+            Resources (UENR), graduating 2026, with hands-on experience building and shipping
+            real Flutter mobile apps and web projects. Strongest in mobile development — from
+            AI-powered crop diagnostics to offline-first fitness tracking — with growing web
+            development skills and cybersecurity fundamentals underway (Linux administration,
+            blue team basics, home SOC lab). Comfortable working solo or in team-based capstone
+            projects, with a track record of shipping usable software rather than just prototypes.
         </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <div class="section-title">EDUCATION</div>
+        <div class="project-item">
+            <div class="project-title">BSc Information Technology</div>
+            <div class="project-subtitle">University of Energy and Natural Resources (UENR), Kumasi, Ghana — Final Year, Expected Graduation 2026</div>
+        </div>
     </div>
     
     <!-- Technical Skills -->
@@ -269,54 +285,46 @@
         <div class="section-title">TECHNICAL SKILLS</div>
         <div class="two-column">
             <div>
-                <h3 style="color: #444; margin-bottom: 10px;">Cloud (AWS)</h3>
+                <h3 style="color: #1a1d2a; margin-bottom: 10px;">Mobile Development</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Amazon S3</span>
-                    <span class="skill-tag">AWS Lambda</span>
-                    <span class="skill-tag">API Gateway</span>
-                    <span class="skill-tag">DynamoDB</span>
-                    <span class="skill-tag">CloudFront</span>
-                    <span class="skill-tag">EC2</span>
-                    <span class="skill-tag">VPC</span>
-                    <span class="skill-tag">IAM</span>
-                    <span class="skill-tag">CloudWatch</span>
-                    <span class="skill-tag">Route 53</span>
-                    <span class="skill-tag">SES</span>
-                    <span class="skill-tag">Cost Explorer</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Riverpod</span>
+                    <span class="skill-tag">SQLite</span>
+                    <span class="skill-tag">TFLite / On-Device ML</span>
+                    <span class="skill-tag">Android</span>
                 </div>
                 
-                <h3 style="color: #444; margin-top: 20px; margin-bottom: 10px;">Development</h3>
+                <h3 style="color: #1a1d2a; margin-top: 20px; margin-bottom: 10px;">Web Development</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">HTML5</span>
                     <span class="skill-tag">CSS3</span>
                     <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Python</span>
                     <span class="skill-tag">Responsive Design</span>
-                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">GitHub Pages</span>
                 </div>
             </div>
             
             <div>
-                <h3 style="color: #444; margin-bottom: 10px;">Tools & DevOps</h3>
+                <h3 style="color: #1a1d2a; margin-bottom: 10px;">Cybersecurity (Learning)</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">AWS CLI</span>
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">Postman</span>
-                    <span class="skill-tag">Cost Optimization</span>
-                    <span class="skill-tag">Security Best Practices</span>
-                    <span class="skill-tag">Infrastructure as Code</span>
-                    <span class="skill-tag">CI/CD Concepts</span>
+                    <span class="skill-tag">Linux User/Group Admin</span>
+                    <span class="skill-tag">Splunk</span>
+                    <span class="skill-tag">Wireshark</span>
+                    <span class="skill-tag">Sysmon</span>
+                    <span class="skill-tag">Network Fundamentals</span>
+                    <span class="skill-tag">Atomic Red Team</span>
                 </div>
                 
-                <h3 style="color: #444; margin-top: 20px; margin-bottom: 10px;">Areas of Expertise</h3>
+                <h3 style="color: #1a1d2a; margin-top: 20px; margin-bottom: 10px;">Tools & Practices</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Serverless Architecture</span>
-                    <span class="skill-tag">Cloud Security</span>
-                    <span class="skill-tag">Cost Management</span>
-                    <span class="skill-tag">Performance Optimization</span>
-                    <span class="skill-tag">Auto-scaling Solutions</span>
-                    <span class="skill-tag">AWS Deployment</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Team Collaboration</span>
+                    <span class="skill-tag">Technical Documentation</span>
+                    <span class="skill-tag">Basic AWS (S3/CloudFront)</span>
                 </div>
             </div>
         </div>
@@ -327,71 +335,86 @@
         <div class="section-title">FEATURED PROJECTS</div>
         
         <div class="project-item">
-            <div class="project-title">Serverless Website with Newsletter System</div>
-            <div class="project-subtitle">Production-ready email subscription management system</div>
+            <div class="project-title">LeafCare — AI-Powered Crop Disease Detection App</div>
+            <div class="project-subtitle">Final-year capstone project (5-member team) — Flutter + on-device machine learning</div>
+            <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">TFLite</span>
+                <span class="tech-tag">Custom CNN</span>
+                <span class="tech-tag">OpenWeatherMap API</span>
+                <span class="tech-tag">Gemini API</span>
+            </div>
+            <ul>
+                <li>Rebuilt and trained a custom CNN on the PlantVillage dataset to classify 9 tomato leaf disease classes</li>
+                <li>Resolved TFLite model-loading failures and implemented dual-threshold confidence rejection for reliable predictions</li>
+                <li>Added weather- and GPS-based outbreak risk assessment via the OpenWeatherMap API</li>
+                <li>Built a Gemini-powered chatbot with English and Twi support, falling back to offline responses</li>
+                <li>Delivered full documentation: methodology docs, elevator pitch and defense presentations, README</li>
+            </ul>
+            <div class="project-results">
+                <strong>Key Results:</strong> Working end-to-end mobile app, functioning on-device ML
+                pipeline, multilingual accessibility for local farmers
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">ElizirFit AI — Offline-First Fitness & Nutrition App</div>
+            <div class="project-subtitle">Personal project, in active development — Flutter with Riverpod/SQLite architecture</div>
+            <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Riverpod</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Dart</span>
+            </div>
+            <ul>
+                <li>Designing offline-first architecture with a local Ghanaian food database for nutrition tracking</li>
+                <li>Building an exercise library with workout repositories and Epley formula PR tracking</li>
+                <li>Implementing a HomeShell with bottom navigation for core app flows</li>
+                <li>Targeting the Ghanaian fitness market with locally relevant food and workout data</li>
+            </ul>
+            <div class="project-results">
+                <strong>Status:</strong> Core architecture in place; exercise library, workout
+                repositories, and PR tracking currently in progress
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">BizSplit — Business Finance Tracker</div>
+            <div class="project-subtitle">Flutter Android app built for a clothing business</div>
+            <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">SQLite</span>
+            </div>
+            <ul>
+                <li>Built a shop-tracker app to manage clothing business finances</li>
+                <li>Automated profit splits between business and personal funds</li>
+                <li>Added adjustable percentage settings for flexible profit allocation</li>
+            </ul>
+            <div class="project-results">
+                <strong>Key Results:</strong> Simplified daily bookkeeping for a small retail business
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-title">Serverless Newsletter System (Early AWS Project)</div>
+            <div class="project-subtitle">Early cloud learning project — serverless email subscription system</div>
             <div class="project-tech">
                 <span class="tech-tag">AWS S3</span>
                 <span class="tech-tag">AWS Lambda</span>
                 <span class="tech-tag">API Gateway</span>
                 <span class="tech-tag">DynamoDB</span>
                 <span class="tech-tag">CloudFront</span>
-                <span class="tech-tag">IAM Security</span>
             </div>
             <ul>
-                <li>Built 100% serverless website handling complete email subscription workflow</li>
-                <li>Implemented admin dashboard with token-based authentication (TravelAdmin123)</li>
-                <li>Designed for auto-scaling from 10 to 10,000+ users with zero server management</li>
-                <li>Achieved operational cost of &lt;$5/month at scale with optimized architecture</li>
-                <li>Live deployment: https://d3o8vrxnvf3ttp.cloudfront.net</li>
+                <li>Built a serverless website with an email subscription workflow to learn core AWS services</li>
+                <li>Implemented an admin dashboard with token-based authentication</li>
+                <li>Deployed via S3 and CloudFront for global delivery</li>
+                <li>Live deployment: <a href="https://d3o8vrxnvf3ttp.cloudfront.net">https://d3o8vrxnvf3ttp.cloudfront.net</a></li>
             </ul>
             <div class="project-results">
-                <strong>Key Results:</strong> 99.9% uptime, cost-efficient architecture, secure implementation, 
-                production-ready system built from scratch
-            </div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-title">Professional Portfolio Website</div>
-            <div class="project-subtitle">Responsive portfolio deployed on AWS infrastructure</div>
-            <div class="project-tech">
-                <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">CSS3</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">AWS S3</span>
-                <span class="tech-tag">CloudFront</span>
-                <span class="tech-tag">Route 53</span>
-            </div>
-            <ul>
-                <li>Designed and deployed responsive portfolio website with modern UI/UX</li>
-                <li>Implemented AWS S3 for static hosting with CloudFront CDN for global delivery</li>
-                <li>Configured HTTPS security, caching policies, and cost optimization</li>
-                <li>Integrated contact form with JavaScript validation and interactive elements</li>
-            </ul>
-            <div class="project-results">
-                <strong>Key Results:</strong> 99.9% uptime, fast global loading, mobile responsive, 
-                professional presentation of skills and projects
-            </div>
-        </div>
-        
-        <div class="project-item">
-            <div class="project-title">AWS Cost Optimization Automation</div>
-            <div class="project-subtitle">Python scripts for cloud cost management and monitoring</div>
-            <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Boto3</span>
-                <span class="tech-tag">CloudWatch</span>
-                <span class="tech-tag">Cost Explorer API</span>
-                <span class="tech-tag">AWS SNS</span>
-            </div>
-            <ul>
-                <li>Developed Python scripts to automate identification of unused AWS resources</li>
-                <li>Created monitoring system for cost anomalies and budget alerts</li>
-                <li>Implemented automated reports with actionable cost-saving recommendations</li>
-                <li>Integrated with Slack/email for real-time notifications</li>
-            </ul>
-            <div class="project-results">
-                <strong>Key Results:</strong> Identified 35% potential cost savings, automated monthly 
-                reporting, proactive cost management
+                <strong>Key Results:</strong> Practical, hands-on exposure to serverless architecture
+                and AWS deployment fundamentals
             </div>
         </div>
     </div>
@@ -401,7 +424,16 @@
         <div class="section-title">CERTIFICATIONS & CONTINUOUS LEARNING</div>
         <div class="two-column">
             <div>
-                <h3 style="color: #444; margin-bottom: 10px;">AWS Training</h3>
+                <h3 style="color: #1a1d2a; margin-bottom: 10px;">Cybersecurity (In Progress)</h3>
+                <ul>
+                    <li>Home SOC lab: VirtualBox, Kali Linux, Metasploitable2</li>
+                    <li>Log ingestion & monitoring with Splunk, Sysmon, Wireshark</li>
+                    <li>Atomic Red Team technique testing (e.g. T1059.001)</li>
+                    <li>Completed hands-on Linux user & group administration assessment</li>
+                </ul>
+            </div>
+            <div>
+                <h3 style="color: #1a1d2a; margin-bottom: 10px;">Web & Cloud</h3>
                 <ul>
                     <li>AWS Skill Builder: Cloud Foundations</li>
                     <li>AWS Skill Builder: VPC Networking</li>
@@ -409,18 +441,10 @@
                     <li>AWS Skill Builder: Serverless Architecture</li>
                 </ul>
             </div>
-            <div>
-                <h3 style="color: #444; margin-bottom: 10px;">In Progress</h3>
-                <ul>
-                    <li>AWS Certified Cloud Practitioner</li>
-                    <li>AWS Certified Solutions Architect - Associate</li>
-                    <li>Advanced Python for Cloud Automation</li>
-                </ul>
-            </div>
         </div>
         <p style="margin-top: 15px; font-style: italic;">
-            <strong>Learning Approach:</strong> Hands-on project-based learning with emphasis on 
-            practical implementation and real-world problem solving
+            <strong>Learning Approach:</strong> Hands-on, project-based learning — building toward
+            a blue team / SOC analyst path, with cloud security as a long-term goal
         </p>
     </div>
     
@@ -429,22 +453,21 @@
         <div class="section-title">VALUE PROPOSITION & AVAILABILITY</div>
         <div class="two-column">
             <div>
-                <h3 style="color: #444; margin-bottom: 10px;">Unique Value</h3>
+                <h3 style="color: #1a1d2a; margin-bottom: 10px;">Unique Value</h3>
                 <ul>
-                    <li><strong>Complete Pipeline:</strong> Development + Deployment expertise</li>
-                    <li><strong>Cost-Conscious:</strong> Built-in optimization from day one</li>
-                    <li><strong>Security-Focused:</strong> Best practices implemented by default</li>
-                    <li><strong>Business-Minded:</strong> Technical decisions aligned with business goals</li>
+                    <li><strong>Ships Real Software:</strong> Working apps, not just prototypes</li>
+                    <li><strong>Cross-Platform:</strong> Comfortable across mobile, web, and growing security skills</li>
+                    <li><strong>Team & Solo:</strong> Delivered as part of a 5-person capstone and independently</li>
+                    <li><strong>Locally-Minded:</strong> Products built for the Ghanaian market (LeafCare, ElizirFit AI)</li>
                 </ul>
             </div>
             <div>
-                <h3 style="color: #444; margin-bottom: 10px;">Available For</h3>
+                <h3 style="color: #1a1d2a; margin-bottom: 10px;">Available For</h3>
                 <ul>
-                    <li>Full-time Cloud Developer roles</li>
-                    <li>AWS Infrastructure positions</li>
-                    <li>DevOps Engineer opportunities</li>
-                    <li>Freelance AWS projects</li>
-                    <li>Cloud consulting engagements</li>
+                    <li>Flutter / mobile freelance projects</li>
+                    <li>Web development freelance or contract work</li>
+                    <li>Junior developer roles (2026 graduate)</li>
+                    <li>Entry-level cybersecurity-adjacent roles as skills grow</li>
                 </ul>
             </div>
         </div>
@@ -452,8 +475,8 @@
     
     <!-- Footer -->
     <div class="footer">
-        <p><strong>Reference:</strong> Portfolio with live projects available at: [Your AWS Portfolio URL]</p>
-        <p>Last Updated: December 2025 | This CV is hosted on AWS infrastructure</p>
+        <p><strong>Reference:</strong> Portfolio with live projects available at: <a href="https://boat-ui.github.io">https://boat-ui.github.io</a> </p>
+        <p>Last Updated: July 2026 | Hosted on GitHub Pages</p>
         <p class="no-print"><em>Tip: Print this page (Ctrl+P) and select "Save as PDF" for a downloadable version</em></p>
     </div>
     
@@ -461,7 +484,7 @@
         // Auto-update the portfolio URL
         document.addEventListener('DOMContentLoaded', function() {
             const portfolioUrl = window.location.origin.replace('/cv-pdf.html', '');
-            const portfolioLinks = document.querySelectorAll('[href="[Your AWS Portfolio URL]"]');
+            const portfolioLinks = document.querySelectorAll('[href="https://boat-ui.github.io"]');
             portfolioLinks.forEach(link => {
                 link.href = portfolioUrl;
                 link.textContent = portfolioUrl;

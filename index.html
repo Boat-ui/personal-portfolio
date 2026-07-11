@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enock Boateng - Full Stack Cloud Developer</title>
+    <title>Enock Boateng - Flutter & Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -25,19 +27,22 @@
             </div>
         </div>
     </nav>
+    <div class="stripe-divider" style="position:fixed; top:0; left:0; z-index:1001;"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
+                <span class="eyebrow">status: available for freelance &amp; full-time</span>
                 <h1 class="hero-title">
+                    <span class="highlight">Design</span> It.<br>
                     <span class="highlight">Build</span> It.<br>
-                    <span class="highlight">Deploy</span> It.<br>
-                    <span class="highlight">Scale</span> It.
+                    <span class="highlight">Ship</span> It.
                 </h1>
                 <p class="hero-subtitle">
-                    Full Stack Cloud Developer specializing in AWS infrastructure, Python automation, 
-                    and secure, scalable web applications.
+                    Final-year IT student at UENR building real, deployable mobile and web apps —
+                    from AI-powered crop diagnostics to offline-first fitness tracking — with
+                    cybersecurity fundamentals underway.
                 </p>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary">
@@ -52,16 +57,16 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Serverless</span>
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Apps Shipped</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">35%</span>
-                        <span class="stat-label">Cost Saved</span>
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Disease Classes Detected</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">99.9%</span>
-                        <span class="stat-label">Uptime</span>
+                        <span class="stat-number">2026</span>
+                        <span class="stat-label">Graduating, UENR</span>
                     </div>
                 </div>
             </div>
@@ -72,43 +77,41 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Technical Stack</h2>
-            <p class="section-subtitle">From development to deployment - I handle the complete pipeline</p>
+            <p class="section-subtitle">Strongest in mobile and web — actively building toward cybersecurity</p>
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Riverpod</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">TFLite / On-Device ML</span>
+                        <span class="skill-tag">Android</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
                         <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">AWS S3 / CloudFront</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> AWS Cloud</h3>
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity (Learning)</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">S3</span>
-                        <span class="skill-tag">Lambda</span>
-                        <span class="skill-tag">EC2</span>
-                        <span class="skill-tag">CloudFront</span>
-                        <span class="skill-tag">API Gateway</span>
-                        <span class="skill-tag">DynamoDB</span>
-                        <span class="skill-tag">VPC</span>
-                        <span class="skill-tag">IAM</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> DevOps & Security</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">AWS CLI</span>
-                        <span class="skill-tag">CloudWatch</span>
-                        <span class="skill-tag">Cost Optimization</span>
-                        <span class="skill-tag">Security Groups</span>
-                        <span class="skill-tag">HTTPS/TLS</span>
+                        <span class="skill-tag">Linux Administration</span>
+                        <span class="skill-tag">Splunk</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Sysmon</span>
+                        <span class="skill-tag">Network Fundamentals</span>
                     </div>
                 </div>
             </div>
@@ -119,18 +122,105 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Real-world applications built and deployed on AWS</p>
+            <p class="section-subtitle">Real apps, built and shipped — solo and in a team</p>
             
             <div class="projects-grid">
-                <!-- Project 1: Newsletter System -->
+                <!-- Project 1: LeafCare -->
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-badge">Production Ready</span>
-                        <h3>📧 Website with Newsletter System</h3>
+                        <span class="project-badge badge-shipped">Shipped — Final-Year Capstone</span>
+                        <h3>🌿 LeafCare — AI Crop Disease Detection</h3>
                     </div>
                     <p class="project-description">
-                        Complete website with email subscription management system built 100% serverless on AWS.
-                        Features admin dashboard, automated email handling, and real-time analytics.
+                        AI-powered Flutter Android app that detects tomato leaf diseases on-device.
+                        Built with a 5-member team: custom CNN trained on the PlantVillage dataset,
+                        weather-based outbreak risk, and a bilingual chatbot for local farmers.
+                    </p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>TFLite</span>
+                        <span>Custom CNN</span>
+                        <span>OpenWeatherMap API</span>
+                        <span>Gemini API</span>
+                    </div>
+                    <div class="project-features">
+                        <p><i class="fas fa-check"></i> Classifies 9 disease classes on-device</p>
+                        <p><i class="fas fa-check"></i> Dual-threshold confidence rejection</p>
+                        <p><i class="fas fa-check"></i> Weather/GPS-based outbreak risk</p>
+                        <p><i class="fas fa-check"></i> English & Twi chatbot support</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Boat-ui" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: ElizirFit AI -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-progress">In Progress</span>
+                        <h3>💪 ElizirFit AI — Offline Fitness App</h3>
+                    </div>
+                    <p class="project-description">
+                        Offline-first Flutter fitness and nutrition app built for the Ghanaian market,
+                        with a local food database, workout logging, and Riverpod/SQLite architecture.
+                    </p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Riverpod</span>
+                        <span>SQLite</span>
+                        <span>Dart</span>
+                    </div>
+                    <div class="project-features">
+                        <p><i class="fas fa-check"></i> Local Ghanaian food database</p>
+                        <p><i class="fas fa-check"></i> Exercise library & workout repositories</p>
+                        <p><i class="fas fa-check"></i> Epley formula PR tracking</p>
+                        <p><i class="fas fa-check"></i> Fully offline-first, no internet needed</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Boat-ui" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: BizSplit -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-shipped">Shipped — Client Project</span>
+                        <h3>💼 BizSplit — Business Finance Tracker</h3>
+                    </div>
+                    <p class="project-description">
+                        Flutter Android app built for a friend's clothing business, automating profit
+                        splits between business and personal funds with adjustable percentage settings.
+                    </p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>SQLite</span>
+                    </div>
+                    <div class="project-features">
+                        <p><i class="fas fa-check"></i> Automated profit-split calculations</p>
+                        <p><i class="fas fa-check"></i> Adjustable split percentages</p>
+                        <p><i class="fas fa-check"></i> Simple daily bookkeeping UI</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Boat-ui" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 4: AWS Newsletter (learning project) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge badge-learning">Learning Project</span>
+                        <h3>📧 Serverless Newsletter System</h3>
+                    </div>
+                    <p class="project-description">
+                        An early project exploring AWS — a website with an email subscription system,
+                        built to learn cloud fundamentals like Lambda, API Gateway, and DynamoDB.
                     </p>
                     <div class="project-tech">
                         <span>S3</span>
@@ -141,9 +231,8 @@
                     </div>
                     <div class="project-features">
                         <p><i class="fas fa-check"></i> Zero server management</p>
-                        <p><i class="fas fa-check"></i> Auto-scales to 10,000+ users</p>
-                        <p><i class="fas fa-check"></i> Admin token authentication</p>
-                        <p><i class="fas fa-check"></i> Cost: &lt;$5/month at scale</p>
+                        <p><i class="fas fa-check"></i> Admin dashboard with token auth</p>
+                        <p><i class="fas fa-check"></i> First hands-on serverless build</p>
                     </div>
                     <div class="project-links">
                         <a href="https://d3o8vrxnvf3ttp.cloudfront.net" target="_blank" class="project-link">
@@ -151,67 +240,6 @@
                         </a>
                         <a href="https://github.com/Boat-ui/aws-newsletter-system" target="_blank" class="project-link">
                             <i class="fab fa-github"></i> Source Code
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Project 2: Portfolio Website -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-badge">This Website</span>
-                        <h3>🌐 Professional Portfolio</h3>
-                    </div>
-                    <p class="project-description">
-                        This responsive portfolio website deployed on AWS with global CDN,
-                        HTTPS security, and automated deployment pipeline.
-                    </p>
-                    <div class="project-tech">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>S3</span>
-                        <span>CloudFront</span>
-                        <span>Route 53</span>
-                    </div>
-                    <div class="project-features">
-                        <p><i class="fas fa-check"></i> 99.9% uptime guarantee</p>
-                        <p><i class="fas fa-check"></i> Global CDN delivery</p>
-                        <p><i class="fas fa-check"></i> Mobile responsive</p>
-                        <p><i class="fas fa-check"></i> SEO optimized</p>
-                    </div>
-                    <div class="project-links">
-                        <span class="project-link">
-                            <i class="fas fa-map-marker-alt"></i> You're viewing it!
-                        </span>
-                    </div>
-                </div>
-                
-                <!-- Project 3: AWS Automation -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-badge">Python Automation</span>
-                        <h3>🤖 AWS Cost Optimization</h3>
-                    </div>
-                    <p class="project-description">
-                        Python scripts for automated AWS cost monitoring, resource optimization,
-                        and security compliance checks.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Boto3</span>
-                        <span>CloudWatch</span>
-                        <span>Cost Explorer</span>
-                        <span>SNS</span>
-                    </div>
-                    <div class="project-features">
-                        <p><i class="fas fa-check"></i> 35% cost reduction identified</p>
-                        <p><i class="fas fa-check"></i> Automated monthly reports</p>
-                        <p><i class="fas fa-check"></i> Real-time monitoring</p>
-                        <p><i class="fas fa-check"></i> Slack/Email alerts</p>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Boat-ui" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> Python Scripts
                         </a>
                     </div>
                 </div>
@@ -226,34 +254,38 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a passionate Cloud Developer specializing in Amazon Web Services. 
-                        My journey started with AWS fundamentals and has evolved into building 
-                        complete, production-ready applications.
+                        I'm a final-year Information Technology student at the University of Energy
+                        and Natural Resources (UENR), Ghana, graduating in 2026. I build real,
+                        working software — not just class assignments — mostly with Flutter for
+                        mobile and standard web tools for everything else.
                     </p>
                     <p>
-                        What sets me apart is my ability to handle the <strong>entire development pipeline</strong>:
-                        from writing frontend code to deploying on AWS infrastructure with proper
-                        security, scalability, and cost optimization.
+                        My strongest work is in mobile: <strong>LeafCare</strong>, an AI disease-detection
+                        app I built with a 5-person team for my final-year project, and
+                        <strong>ElizirFit AI</strong>, an offline-first fitness app I'm building solo.
+                        Web development came along the way — it's how this site and an early AWS
+                        project came together.
                     </p>
                     <p>
-                        I believe in learning through building. My Website with built-in newsletter system is a testament
-                        to that - built from scratch, deployed, and now handling real user subscriptions.
+                        I'm also building toward cybersecurity, one step at a time — currently
+                        working through Linux administration, blue team fundamentals, and a home
+                        SOC lab, with cloud security as a long-term goal.
                     </p>
                     <div class="about-values">
                         <div class="value">
-                            <i class="fas fa-bolt"></i>
-                            <h4>Fast Deployment</h4>
-                            <p>From code to production in days</p>
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile-First</h4>
+                            <p>Offline-capable apps built for real conditions</p>
                         </div>
                         <div class="value">
-                            <i class="fas fa-lock"></i>
-                            <h4>Security First</h4>
-                            <p>Built-in security at every layer</p>
+                            <i class="fas fa-code"></i>
+                            <h4>Full Web Stack</h4>
+                            <p>From static sites to deployed cloud projects</p>
                         </div>
                         <div class="value">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>Cost Effective</h4>
-                            <p>Optimized for performance & cost</p>
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Always Learning</h4>
+                            <p>Actively building cybersecurity fundamentals</p>
                         </div>
                     </div>
                 </div>
@@ -265,7 +297,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">Available for freelance projects and full-time opportunities</p>
+            <p class="section-subtitle">Available for freelance projects (Fiverr/Upwork) and full-time opportunities</p>
             
             <div class="contact-grid">
                 <div class="contact-info">
@@ -340,10 +372,12 @@
             
             <div class="availability">
                 <i class="fas fa-circle"></i>
-                <span>Currently available for new projects</span>
+                <span>Currently available for freelance and full-time opportunities</span>
             </div>
         </div>
     </section>
+
+    <div class="stripe-divider"></div>
 
     <!-- Footer -->
     <footer>
@@ -353,7 +387,7 @@
                     <span class="logo-icon">🚀</span>
                     <span class="logo-text">Enock Boateng</span>
                 </div>
-                <p class="footer-tagline">Full Stack Cloud Developer | AWS Specialist</p>
+                <p class="footer-tagline">Flutter & Web Developer | Final-Year IT Student, UENR</p>
                 
                 <div class="footer-links">
                     <a href="#home">Home</a>
@@ -376,12 +410,12 @@
                 </div>
                 
                 <div class="footer-aws">
-                    <i class="fab fa-aws"></i>
-                    <span>Hosted on AWS Cloud</span>
+                    <i class="fab fa-github"></i>
+                    <span>Hosted on GitHub Pages</span>
                 </div>
                 
                 <p class="footer-copyright">
-                    © 2024 Enock Boateng. All rights reserved.
+                    © 2026 Enock Boateng. All rights reserved.
                 </p>
             </div>
         </div>
