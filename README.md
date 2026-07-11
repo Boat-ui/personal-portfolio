@@ -2,7 +2,7 @@
 
 Personal portfolio and CV, built as a static site and hosted on GitHub Pages.
 
-**Live site:**  <https://boat-ui.github.io/personal-portfolio>
+**Live site:** https://boat-ui.github.io
 
 ## About
 
@@ -20,16 +20,22 @@ building toward a blue team / SOC analyst path.
 - **ElizirFit AI** — Offline-first Flutter fitness and nutrition app for the
   Ghanaian market, with a local food database, workout logging, and a
   Riverpod/SQLite architecture. In active development.
-- **BizSplit** — Flutter Android app built for a clothing business, automating
-  profit splits between business and personal funds.
-- **Serverless Newsletter System** — An early AWS learning project: a website with
-  an email subscription workflow built on S3, Lambda, API Gateway, and DynamoDB.
+- **BizSplit** — Flutter + Firebase business management app for small businesses:
+  inventory management, sales recording, revenue monitoring, and automated
+  profit allocation across business, savings, and personal funds using
+  customizable percentage rules. Includes real-time analytics, secure cloud
+  storage, and offline data support.
+- **Serverless Newsletter System** — An early cloud learning project: a website
+  with an email subscription system. Started as an AWS build (Lambda, API
+  Gateway, DynamoDB) to learn serverless fundamentals, then migrated to
+  GitHub Pages + Supabase for free, low-maintenance hosting.
 
 ## Stack
 
 - HTML5, CSS3, JavaScript
 - Fonts: Space Grotesk, Inter, IBM Plex Mono (Google Fonts)
 - Font Awesome for icons
+- Contact form powered by Formspree
 - Hosted on GitHub Pages
 
 ## Structure
@@ -39,12 +45,14 @@ building toward a blue team / SOC analyst path.
 ├── index.html    # Portfolio home page
 ├── cv.html       # Print-friendly CV (Ctrl+P → Save as PDF)
 ├── style.css     # Site styling
-└── script.js     # Interactivity (nav, contact form, etc.)
+└── script.js     # Interactivity (nav, contact form, scroll animations)
 ```
 
 ## Contact
 
-- Email: <benock672@gmail.com>
+- Email: benock672@gmail.com
+- Phone: +233 55 068 6084
+- WhatsApp: [Message me](https://wa.me/233539864748)
 - LinkedIn: [linkedin.com/in/enock-boateng](https://www.linkedin.com/in/enock-boateng-886882283)
 - GitHub: [github.com/Boat-ui](https://github.com/Boat-ui)
 

@@ -214,30 +214,30 @@
                     </div>
                 </div>
                 
-                <!-- Project 4: AWS Newsletter (learning project) -->
+                <!-- Project 4: Newsletter System (learning project) -->
                 <div class="project-card">
                     <div class="project-header">
                         <span class="project-badge badge-learning">Learning Project</span>
                         <h3>📧 Serverless Newsletter System</h3>
                     </div>
                     <p class="project-description">
-                        An early project exploring AWS — a website with an email subscription system,
-                        built to learn cloud fundamentals like Lambda, API Gateway, and DynamoDB.
+                        An early project exploring cloud fundamentals — a website with an email subscription
+                        system. Started as an AWS build (Lambda, API Gateway, DynamoDB) to learn serverless
+                        basics, then migrated to GitHub Pages + Supabase for free, low-maintenance hosting.
                     </p>
                     <div class="project-tech">
-                        <span>S3</span>
-                        <span>Lambda</span>
-                        <span>API Gateway</span>
-                        <span>DynamoDB</span>
-                        <span>CloudFront</span>
+                        <span>GitHub Pages</span>
+                        <span>Supabase</span>
+                        <span>Postgres</span>
+                        <span>Row Level Security</span>
                     </div>
                     <div class="project-features">
                         <p><i class="fas fa-check"></i> Zero server management</p>
-                        <p><i class="fas fa-check"></i> Admin dashboard with token auth</p>
-                        <p><i class="fas fa-check"></i> First hands-on serverless build</p>
+                        <p><i class="fas fa-check"></i> Admin dashboard with real authentication</p>
+                        <p><i class="fas fa-check"></i> Migrated from AWS to a simpler, free-tier stack</p>
                     </div>
                     <div class="project-links">
-                        <a href="https://d3o8vrxnvf3ttp.cloudfront.net" target="_blank" class="project-link">
+                        <a href="https://boat-ui.github.io/aws-newsletter-system" target="_blank" class="project-link">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                         <a href="https://github.com/Boat-ui/aws-newsletter-system" target="_blank" class="project-link">
@@ -307,7 +307,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <a href="mailto:benock672@gmail.com">benock672@gmail.coms</a>
+                            <a href="mailto:benock672@gmail.com">benock672@gmail.com</a>
                         </div>
                     </div>
                     
@@ -362,22 +362,23 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
+                        <p id="formStatus" class="form-status"></p>
                     </form>
                 </div>
             </div>
